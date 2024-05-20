@@ -1,0 +1,33 @@
+*, *::after, *::before{
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.cuadroCNT{
+    
+    
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    
+}
+.cuadro{
+    height:100px;
+    width:100px;
+    background-color: black;
+    
+
+    
+}
+
+.centro{
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+.hor{
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc; 
+}
