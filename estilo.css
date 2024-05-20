@@ -3,6 +3,7 @@ box-sizing: border-box;
 }
 body{
     margin: 0;
+
 }
 .cuadroCNT{
     
@@ -31,3 +32,37 @@ body{
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc; 
 }
+
+.popUp{
+color: #ccc;
+    position: fixed;
+    top:0 ;left: 0;
+    background:rgb(0,0,0,.9) ;
+    height: 100%;
+    width: 100%;
+    z-index:100 ;
+    /*visible OR NOT*/
+    display: none;
+}
+
+.popUp span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    z-index:100 ;
+  }
+
+  .popUp .insideBox{
+color: black;
+    position: absolute;
+    background-color: aliceblue;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius:5px;
+    width: 750px;
+    object-fit: cover;
+  }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIC-TACT-TOE</title>
-    <link rel="stylesheet" href="/estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <h1>GATO</h1>
@@ -18,6 +18,10 @@
             <h3>puntuacion del Jugador</h3>
             <p>0</p>
         </div>
+    </div>
+    <div class="botones">
+        <button onclick="machine()">1 player</button>
+        <button onclick="human()">HUMAN VS HUMAN</button>
     </div>
 <div class="cuadroCNT">
     <div class="cuadro"></div>
@@ -40,6 +44,14 @@
     </select>
 </div>
 
-<script src="/gato.js"></script>
+<div id="Pop" class="popUp">
+    <div class="insideBox">
+        <p id="salida">ganador</p>
+        <span onclick="cerrar()">&times;</span>
+    </div>
+
+</div>
+
+<script src="gato.js"></script>
 </body>
 </html>
