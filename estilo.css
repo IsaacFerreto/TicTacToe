@@ -3,9 +3,25 @@ box-sizing: border-box;
 }
 body{
     margin: 0;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 
 }
-.cuadroCNT{
+.puntuacion{
+    display: flex;
+    gap: 20px;
+
+}
+
+.puntuacion div{
+text-align: center;
+bac
+
+}
+.cuadroCNT{ 
     
     
     width: 100vw;
@@ -66,3 +82,4 @@ color: black;
     width: 750px;
     object-fit: cover;
   }
+  
