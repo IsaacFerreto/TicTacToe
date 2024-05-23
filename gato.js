@@ -9,13 +9,14 @@ let counter = 0;
 let J1Puntuacion = JSON.parse(localStorage.getItem('Jugador1'));
 let J2Puntuacion = JSON.parse(localStorage.getItem('Jugador2'));
 
-console.log(J2Puntuacion+' puntiacadsf');
-console.log(J1Puntuacion+' puntutacion');
 
-if (J2Puntuacion==null&&J1Puntuacion==null) {
-  J1Puntuacion=0
+
+if (J2Puntuacion==null) {
   J2Puntuacion=0
 }
+if (J1Puntuacion==null) {
+    J1Puntuacion=0
+  }
 
 puntuacion1.innerHTML = parseInt(J1Puntuacion);
 puntuacion2.innerHTML = parseInt(J2Puntuacion);
