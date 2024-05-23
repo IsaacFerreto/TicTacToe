@@ -1,6 +1,12 @@
 *, *::after, *::before{
 box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Krazy'; /* Name your font family */
+    src: url('/TicTacToe/FONT/KRAZYNIGHTS.TTF'); /* Locate the .ttf file within your directory*/
+  }
+  
 body{
     margin: 0;
     display:  flex;
@@ -8,22 +14,26 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
+    background-color: black;
+    overflow: hidden;
 
 }
 .puntuacion{
     display: flex;
     gap: 20px;
+    margin-bottom: 5%;
+    color: white;
 
 }
 
 .puntuacion div{
 text-align: center;
-bac
+
 
 }
 .cuadroCNT{ 
     
-    
+    margin-top: 0;
     width: 100vw;
     display: grid;
     justify-content: center;
@@ -32,13 +42,43 @@ bac
     
 }
 .cuadro{
+    text-align: center;
     height:100px;
     width:100px;
     background-color: black;
-    
-
+    font-size: 80px;
+    font-family:'Krazy';
+    /*box-shadow: 0 5px 15px black;*/
+    cursor: pointer;
+    transition: .2s linear;   
+    color: aliceblue;
     
 }
+
+.cuadro:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    border: 2px solid #ccc;
+    box-shadow: 0 5px 15px white;
+  }
+
+.botones{
+    position:  absolute;
+   margin-top: -500px;
+   margin-left: -1300px;
+}
+
+.botones button{
+
+border: none;
+color: white;
+background-color: black;
+cursor: pointer;
+}
+
+.botones button:hover{
+    border: 2px solid #ccc;;
+    text-shadow: 1px 1px 2px black;
+    }
 
 .centro{
     border-left: 2px solid #ccc;
@@ -52,13 +92,15 @@ bac
 .popUp{
 color: #ccc;
     position: fixed;
-    top:0 ;left: 0;
+    top:40% ;
+    left: 45%;
     background:rgb(0,0,0,.9) ;
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width:  100px;
     z-index:100 ;
     /*visible OR NOT*/
     display: none;
+    text-align: center;
 }
 
 .popUp span{
@@ -79,7 +121,22 @@ color: black;
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
     border-radius:5px;
-    width: 750px;
+    height: 100px;
+    width: 400px;
     object-fit: cover;
   }
   
+  .reinicia{
+    border: none;
+color: white;
+background-color: black;
+cursor: pointer;
+  }
+  .reinicia:hover{
+    margin-top: 5px;
+    border: 2px solid #ccc;;
+    text-shadow: 1px 1px 2px rgb(230, 9, 9);
+    }
+    .cntReiniciar{
+        margin-top: 25px;
+    }
